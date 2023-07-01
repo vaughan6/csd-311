@@ -1,0 +1,22 @@
+{
+  "record_type": "customer",
+    "id": "00001",
+    "first_name": "Hugh",
+    "last_name": "Jackman",
+    "birthdate": "31/10/1980",
+    "user_name": "hughj"
+}
+{
+  "record_type": "invoice",
+    "id": "42",
+    "date_created": "01/04/2023",
+    "date_shipped": "02/04/2023",
+    "subtotal": "1500.17"
+}
+{
+  "record_type": "line_item",
+    "id": "23456",
+    "name": "car_door",
+    "price": "1450.00",
+    "quantity": "1"
+}

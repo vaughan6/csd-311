@@ -1,0 +1,21 @@
+{
+    "record_type": "student",
+    "student_id": "987654",
+    "first_name": "Romeo",
+    "last_name": "Montague"
+}
+{
+    "record_type": "enrollment",
+    "term": "summer",
+    "gpa": "3.5",
+    "start_date": "18/06/2023",
+    "end_date": "18/09/2023"
+}
+{
+    "record_type": "course",
+    "course_id": "456",
+    "description": "basketry",
+    "instructor": "Mr. Hood",
+    "grade": "75"
+}
+

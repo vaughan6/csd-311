@@ -1,0 +1,49 @@
+{
+    "student_id": "S001",
+    "first_name": "John",
+    "last_name": "Doe",
+    "enrollments": [
+      {
+        "term": "Fall 2023",
+        "gpa": 3.5,
+        "start_date": "2023-09-01",
+        "end_date": "2023-12-15",
+        "courses": [
+          {
+            "course_id": "C003",
+            
+            "description": "Computer Science",
+            "instructor": "Dr. Smith",
+            "grade": "A"
+          },
+          {
+            "course_id": "C004",
+            "description": "Math 101",
+            "instructor": "Prof. Einstein",
+            "grade": "B+"
+          }
+        ]
+      },
+      {
+        "term": "Spring 2023",
+        "gpa": 3.2,
+        "start_date": "2023-01-15",
+        "end_date": "2023-05-05",
+        "courses": [
+          {
+            "course_id": "C001",
+            "description": "Art History",
+            "instructor": "Dr. Hyde",
+            "grade": "B"
+          },
+          {
+            "course_id": "C002",
+            "description": "English 101",
+            "instructor": "Prof. Dumbledore",
+            "grade": "A-"
+          }
+        ]
+      }
+    ]
+  }
+  

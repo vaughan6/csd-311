@@ -1,0 +1,87 @@
+/* USER Collection */
+[
+  {
+    "_id": "user1",
+    "name": "Steve"
+  },
+  {
+    "_id": "user2",
+    "name": "Alex"
+  },
+  {
+    "_id": "user3",
+    "name": "Enderman"
+  }
+]
+/* LINK_USER_ROLE collection */
+[
+  {
+    "_id": "link1",
+    "user_id": "user1",
+    "role_id": "role1"
+  },
+  {
+    "_id": "link2",
+    "user_id": "user1",
+    "role_id": "role2"
+  },
+  {
+    "_id": "link3",
+    "user_id": "user2",
+    "role_id": "role1"
+  },
+  {
+    "_id": "link4",
+    "user_id": "user3",
+    "role_id": "role2"
+  }
+]
+/* ROLE Collection */
+[
+  {
+    "_id": "role1",
+    "name": "Builder"
+  },
+  {
+    "_id": "role2",
+    "name": "Miner"
+  }
+]
+/* LINK_ROLE_PERMISSION Collection */
+[
+  {
+    "_id": "link99",
+    "role_id": "role1",
+    "permission_id": "perm1"
+  },
+  {
+    "_id": "link98",
+    "role_id": "role1",
+    "permission_id": "perm2"
+  },
+  {
+    "_id": "link97",
+    "role_id": "role2",
+    "permission_id": "perm2"
+  },
+  {
+    "_id": "link96",
+    "role_id": "role2",
+    "permission_id": "perm3"
+  }
+]
+/* PERMISSION Collection */
+[
+  {
+    "_id": "perm1",
+    "name": "Place Blocks"
+  },
+  {
+    "_id": "perm2",
+    "name": "Destroy Blocks"
+  },
+  {
+    "_id": "perm3",
+    "name": "Mine Ores"
+  }
+]
