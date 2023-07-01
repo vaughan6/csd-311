@@ -1,7 +1,7 @@
 """ 
     Title: mongodb_test.py
-    Author: Professor Krasso
-    Date: 10 July 2020
+    Author: James Vaughan
+    Date: 01 July 2023
     Description: Test program for connecting to a 
                  MongoDB Atlas cluster
 """
