@@ -1,7 +1,7 @@
 """ 
     Title: pytech_insert.py
-    Author: Professor Krasso
-    Date: 10 July 2020
+    Author: James Vaughan
+    Date: 02 July 2023
     Description: Test program for inserting new documents 
                  into the students collection 
 """
@@ -10,7 +10,7 @@
 from pymongo import MongoClient
 
 # MongoDB connection string 
-url = "mongodb+srv://admin:admin@cluster0.rsnru.mongodb.net/pytech?retryWrites=true&w=majority"
+url = "mongodb+srv://admin:admin@cluster0.ml7xex1.mongodb.net/pytech?retryWrites=true&w=majority"
 
 # connect to the MongoDB cluster 
 client = MongoClient(url)
