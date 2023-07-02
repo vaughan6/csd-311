@@ -1,7 +1,7 @@
 """ 
     Title: pytech_queries.py
-    Author: Professor Krasso
-    Date: 10 July 2020
+    Author: James Vaughan
+    Date: 02 July 2023
     Description: Test program for querying the students collection.
 """
 
