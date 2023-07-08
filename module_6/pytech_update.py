@@ -1,7 +1,7 @@
 """ 
     Title: pytech_update.py
-    Author: Professor Krasso
-    Date: 10 July 2020
+    Author: James Vaughan
+    Date: 08 July 2023
     Description: Test program for updating a document in the pytech collection
 """
 
