@@ -1,7 +1,7 @@
 """ 
     Title: pysports_join_queries.py
-    Author: Professor Krasso
-    Date: 16 July 2020
+    Author: James Vaughan
+    Date: 22 July 2023
     Description: Test program for joining the player and team tables
 """
 
