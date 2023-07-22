@@ -1,7 +1,7 @@
 """ 
     Title: pysports_queries.py
-    Author: Professor Krasso
-    Date: 15 July 2020
+    Author: James Vaughan
+    Date: 22 July 2023
     Description: Test program for executing queries against the pysports database. 
 """
 
