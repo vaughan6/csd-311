@@ -1,0 +1,43 @@
+First I actually want to address joins overall, even if it is only briefly. A JOIN operation creates a new table-like data structure which is referred to as a 'result set'. The result set is populated with the data from rows in two different, but related tables. The relationship between the tables is defined by a 'join condition', which is often based off of a comparison of primary keys in one table and the corresponding foreign keys in another table. 
+
+The join operation is accomplished using at least three statements. 
+First, a SELECT statement specifies the columns which are to be populated in the result set (the data of interest). 
+Second, a FROM statement specifies the first table. 
+Third, a JOIN statement specifies the second table and the join condition. The join condition compares a column from each table using a comparison operator (=, <, >, etc.). When the join condition evaluates to true for a specific pair of rows from the two tables being joined, it triggers the creation of a result set with the combined data from the matching rows.
+
+1. Inner Joins
+
+Inner joins seem to be the most straightforward (that might be generous...). The result set contains only the rows which have matching values (which are often key pairs) in both tables. I will attempt to provide a description of the process:
+
+The database management system (DBMS) reads the values in the specified column of the first table. 
+For each value, the DBMS searches the specified column in the second table for rows which are related/matching, based on the join condition (such as the values being equal to each other). 
+When matching rows are found in the second table, the matching row in the first table is combined with the matching row in the second table. The result is then added to the result set. 
+This process continues until all matching pairs of rows are processed, resulting in a final result set that contains only the rows with matching relationships in both tables.
+
+2. Outer Joins
+
+Outer joins produce a result for every row in one or both tables. A full join produces a result for every row in both tables, but will combine rows which match based on the join condition. So null values may be produced by the lack of a matching row in either the first (left) table or the second (right) table.
+
+3. Left/right Joins+
+
+Left and right joins produce a result for every row in one of the two tables. So in a LEFT JOIN, a result will be produced for every row in the first table, whether a matching row is found in the second table or not. In the case where a matching row is found, the rows are joined. In this case, null values will likely exist in the case of the second table not having a matching row.
+
+As a sort of side note, I wondered why have a left/right join, when you could just swap the order in which you specify the tables? The best answer I've found so far is that in complicated queries where statements are compounded, swapping the order of the tables may not always produce the same result as using a LEFT or RIGHT join. I'll be honest, so far I fail to think of a situation where that would be the case, but maybe someone else here can expound on that topic? 
+
+
+
+
+
+References
+
+Ramakrishnan, R., & Gehrke, J. (2003). Database Management Systems (3rd ed.). McGraw-Hill.
+
+Silberschatz, A., Korth, H. F., & Sudarshan, S. (2010). Database System Concepts (6th ed.). McGraw-Hill.
+
+Date, C. J. (2003). An Introduction to Database Systems (8th ed.). Addison-Wesley.
+
+Beaulieu, A. (2009). Learning SQL (2nd ed.). O'Reilly Media.
+
+A Beginner’s Guide to SQL. (n.d.). W3Schools. https://www.w3schools.com/sql/
+
+SQL Tutorial. (n.d.). SQLZoo. http://sqlzoo.net/
