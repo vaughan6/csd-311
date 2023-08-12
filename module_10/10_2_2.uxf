@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>81</x>
+      <y>108</y>
+      <w>445</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>
+User
+--
+user_id (PK)   | INT                     | NOT NULL | AUTO_INCREMENT 
+first_name      | VARCHAR(75)   | NOT NULL
+last_name      | VARCHAR(75)   | NOT NULL
+    </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>99</x>
+      <y>333</y>
+      <w>436</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>
+Wishlist
+--
+wishlist_id (PK)       | INT    | NOT NULL |  AUTO_INCREMENT 
+user_id (FK)            | INT    | NOT NULL
+book_id (FK)           | INT    | NOT NULL 
+    </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>675</x>
+      <y>333</y>
+      <w>445</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>
+Book
+--
+book_id (PK)   | INT                      | NOT NULL |  AUTO_INCREMENT 
+book_name     | VARCHAR(200)  | NOT NULL
+details              | VARCHAR(500)
+author              | VARCHAR(200)  | NOT NULL
+    </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>702</x>
+      <y>126</y>
+      <w>328</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>
+Store
+--
+store_id (PK)      | INT                       | NOT NULL
+locale                  | VARCHAR(500)  | NOT NULL
+    </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>270</x>
+      <y>216</y>
+      <w>45</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>m1=1.1
+m2=1.*</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>522</x>
+      <y>396</y>
+      <w>171</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>m1=1.*
+m2=1.*</panel_attributes>
+    <additional_attributes>10.0;10.0;170.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>864</x>
+      <y>216</y>
+      <w>45</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>m1=1.*
+m2=1.*</panel_attributes>
+    <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
